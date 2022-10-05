@@ -23,9 +23,9 @@ public class VideoGameService {
 
     public List<VideoGame> GetAllGames() { return videoGameRepository.findAll(); }
 
-    public List<VideoGame> GetGameId()
+    public VideoGame GetGameId()
     {
-        return videoGameRepository.findAll().stream().filter((g) -> g.(Id 10).equals((10))).toList();
+        return videoGameRepository.findAll().stream().filter((v) -> v.getId()).findFirst().orElse(null);
     }
 
 
