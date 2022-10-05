@@ -26,4 +26,8 @@ public class VideoGameController {
     public List<VideoGame> GetAllGames(){
         return service.GetAllGames();
     }
+    @GetMapping("/getById")
+    public List<VideoGame> GetGameId(){
+        return service.GetGameId();
+    }
 }
