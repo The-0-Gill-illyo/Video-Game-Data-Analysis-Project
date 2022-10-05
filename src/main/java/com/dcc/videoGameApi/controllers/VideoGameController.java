@@ -23,7 +23,7 @@ public class VideoGameController {
         return service.GetCountOfGames();
     }
     @GetMapping("/all")
-    public long GetAllGames(){
+    public List<VideoGame> GetAllGames(){
         return service.GetAllGames();
     }
 }
